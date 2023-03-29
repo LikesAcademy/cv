@@ -1,0 +1,155 @@
+body {
+  margin: 0;
+  text-align: center;
+}
+
+h1 {
+  font-family: 'Sacramento', serif;
+  font-size: 7rem;
+  color: #66bfbf;
+  margin: 4rem 0 -3rem 0;
+}
+
+h2 {
+  font-family: 'Montserrat', serif;
+  font-size: 3rem;
+  color: #66bfbf
+}
+
+h3 {
+  font-family: 'Montserrat', serif;
+  color: #11999e;
+  font-weight: bolder;
+}
+
+hr {
+  width: 10rem;
+  border-style: dotted;
+  border-width: .5rem 0 0 0;
+  color: #eaf6f6;
+  margin: 4rem auto 0;
+}
+
+p {
+  font-family: 'Merriweather', serif;
+  font-weight: bold;
+  line-height: 2rem;
+}
+
+.a {
+  color: #11999e;
+  padding: 2rem;
+  font-family: 'Montserrat', serif;
+  font-weight: bold;
+}
+
+.a:hover {
+  color: white;
+}
+
+.a-programmer {
+  font-weight: normal;
+}
+
+.btn {
+  background: #11cdd4;
+  background-image: -webkit-linear-gradient(top, #11cdd4, #11999e);
+  background-image: -moz-linear-gradient(top, #11cdd4, #11999e);
+  background-image: -ms-linear-gradient(top, #11cdd4, #11999e);
+  background-image: -o-linear-gradient(top, #11cdd4, #11999e);
+  background-image: linear-gradient(to bottom, #11cdd4, #11999e);
+  -webkit-border-radius: 8;
+  -moz-border-radius: 8;
+  border-radius: 8px;
+  font-family: Arial;
+  color: #ffffff;
+  font-size: 20px;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background: #30e3cb;
+  background-image: -webkit-linear-gradient(top, #30e3cb, #2bc4ad);
+  background-image: -moz-linear-gradient(top, #30e3cb, #2bc4ad);
+  background-image: -ms-linear-gradient(top, #30e3cb, #2bc4ad);
+  background-image: -o-linear-gradient(top, #30e3cb, #2bc4ad);
+  background-image: linear-gradient(to bottom, #30e3cb, #2bc4ad);
+  text-decoration: none;
+}
+
+.con-bottom {
+  background: #66bfbf;
+  padding: 3rem 0;
+}
+
+.con-middle {
+  padding: 0 0 4rem;
+}
+
+.con-top {
+  padding: 3rem 0 0 0;
+  background: #eaf6f6;
+  margin: 0 0 5rem;
+}
+
+.cloud-bottom {
+  position: absolute;
+  margin: 0 0 0 -10rem;
+}
+
+.cloud-top {
+  position: relative;
+  margin-left: 50rem;
+}
+
+.credit {
+  color: white;
+  font-weight: normal;
+  padding-top: 1rem;
+}
+.moon {
+  color: #11999e;
+  text-decoration: none;
+}
+
+.moon:hover {
+  color: grey;
+}
+
+.p-get_in_toch {
+  width: 40rem;
+  margin: 0 auto 4rem;
+}
+.pic-moon {
+  float: left;
+  width: 10rem;
+}
+
+.pic-blender {
+  float: right;
+  width: 15rem;
+}
+
+.pro {
+  text-decoration: underline;
+}
+
+.profile-pic {
+  border-radius: 100%;
+  width: 15rem;
+}
+
+.skills-my {
+  width: 40rem;
+  margin: auto;
+}
+
+.skill-top {
+  text-align: left;
+}
+
+.skill-bottom {
+  text-align: left;
+  margin: 3rem auto 3rem;
+}
