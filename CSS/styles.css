@@ -27,7 +27,7 @@ hr {
   border-style: dotted;
   border-width: .5rem 0 0 0;
   color: #eaf6f6;
-  margin: 4rem auto 0;
+  margin: 5rem auto;
 }
 
 p {
@@ -142,7 +142,7 @@ p {
 
 .skills-my {
   width: 40rem;
-  margin: 3rem auto 5rem;
+  margin: 5rem auto 7rem;
 }
 
 .skill-top {
