@@ -1,33 +1,45 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <title>Pay with MetaMask</title>
+  <script src="https://cdn.jsdelivr.net/npm/web3@1.10.0/dist/web3.min.js"></script>
 </head>
-<body>
+<body style="background:black; color:white; font-family:sans-serif; text-align:center; padding-top:100px">
   <h1>Pay 0.0001 ETH on Base</h1>
-  <button onclick="pay()">Pay with MetaMask</button>
+  <button id="pay" style="font-size:20px; padding:10px 30px;">Pay with MetaMask</button>
 
   <script>
-    async function pay() {
-      if (!window.ethereum) return alert("Install MetaMask");
-      await window.ethereum.request({ method: "eth_requestAccounts" });
+    const recipient = "0x92f77242cE656a95466C8597Ac386556a7A91560";
+    const amountInEth = "0.0001";
 
-      const tx = {
-        to: "0x92f77242cE656a95466C8597Ac386556a7A91560",
-        value: "0x16345785D8A0000" // 0.0001 ETH in wei (hex)
-      };
+    document.getElementById("pay").onclick = async () => {
+      if (typeof window.ethereum === 'undefined') {
+        alert("MetaMask is not installed.");
+        return;
+      }
 
       try {
-        const txHash = await window.ethereum.request({
-          method: "eth_sendTransaction",
-          params: [tx]
+        await ethereum.request({ method: 'eth_requestAccounts' });
+
+        const web3 = new Web3(window.ethereum);
+
+        const tx = {
+          from: ethereum.selectedAddress,
+          to: recipient,
+          value: web3.utils.toHex(web3.utils.toWei(amountInEth, "ether")),
+        };
+
+        await ethereum.request({
+          method: 'eth_sendTransaction',
+          params: [tx],
         });
-        alert("Transaction sent: " + txHash);
+
+        alert("✅ Payment sent!");
       } catch (err) {
         alert("Transaction failed: " + err.message);
       }
-    }
+    };
   </script>
 </body>
 </html>
